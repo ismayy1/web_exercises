@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey form</title>
+    <meta name="viewport" content="width=device-width, initial-scaled=1, user-scalable=no"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="heading">
+      <h1 id="head">ToDo Survay form ISM</h1>
+      <h2 id="subheading">Thanks for considering to use our survay!</h2>
+    </div>
+    <form>
+      <div class="content1">
+          <label>Name: </label><br>
+          <input type="name" name="name" placeholder="Enter your name:" class="box"><br>
+          <label>Email: </label><br>
+          <input type="email" name="email" placeholder="Enter your name:" class="box"><br>
+          <label>Age: </label><br>
+          <input type="age" name="age" placeholder="How old are you?" class="box"><br>
+          <label>Which is the best description for your current role? </label><br><br>
+
+        <div id="option1">
+          <select>
+            <option name="Select your current role!">Select your current role!</option>
+            <option value="Student">Student</option>
+            <option value="Intern">Intern</option>
+            <option value="Full time employee">Full time employee</option>
+            <option value="Part time employee">Part time employee</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <br>
+
+        <label id="head1">Would you recommend a ToDo survay to your lads?</label><br><br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbsp Definitely<br><br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbsp Maybe<br><br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbsp Not sure<br><br>
+        <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbsp No<br><br>
+        <label>What's your favourite feature of ToDo survay?</label><br><br>
+        <div id="option2">
+          <select>
+            <option name="Select an option!">Select an option!</option>
+            <option value="Challenged">Challenged</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open Source">Open Source</option>
+          </select>
+        </div>
+        <br><br>
+        <label id="head2">What would you like to see improved? (Check all that apply)</label><br>
+        <div id="content2">
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp Front-end Projects</label><br>
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp Back-end Projects</label><br>
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp Data Visualization</label><br>
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp Challenges</label><br>
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp Open Source Community</label><br>
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp Gitter help rooms</label><br>
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp Videos</label><br>
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp City Meetups</label><br>
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp Forum</label><br>
+          <input type="checkbox" name="checkbox" class="larger"><label>&nbsp Addtional Courses</label><br>
+
+          <label id="head2">Any comments or suggestions?</label><br>
+          <textarea placeholder="Enter your Coment Here..."></textarea><br>
+          <button><h3>Submit</h3></button>
+        </div>
+
+      </div>
+    </form>
+
+  <script src="code.js" charset="utf-8"></script>
+  </body>
+</html>
