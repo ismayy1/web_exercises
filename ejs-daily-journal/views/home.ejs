@@ -1,0 +1,23 @@
+<%- include('partials/header') %> 
+
+<style>
+  a:link{
+    text-decoration: none;
+  }
+</style>
+
+<h1>Home</h1>
+<p> <%= startingContentHome %> </p>
+
+<!-- <h3>Posts</h3> -->
+<!-- <p> <%= newPost %> </p> -->
+
+<% newPost.forEach(post => { %>
+    <h1><%= post.title %></h1>
+    <p><%= post.content.substring(0, 100) + " ..." %> <a href="/posts/<%= post.title %>">Read more</a> </p>
+    
+<% }) %>
+
+<button class="w-100 btn btn-sm btn-secondary"><a href="/compose" name="compose"> compose </a></button>
+
+<%- include('partials/footer') %> 
